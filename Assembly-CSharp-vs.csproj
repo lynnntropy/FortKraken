@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{F46930D6-9ACA-B417-7D33-97D3763DE78F}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+	<BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_STANDALONE_WIN;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_AUDIO_FMOD;UNITY_STANDALONE;ENABLE_MONO;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_GENERICS;ENABLE_SUBSTANCE;INCLUDE_WP8SUPPORT;ENABLE_MOVIES;ENABLE_WWW;ENABLE_IMAGEEFFECTS;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_DUCK_TYPING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;UNITY_4_3_4;UNITY_4_3;UNITY_64;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="System.Xml.Linq" />
+	<Reference Include="UnityEngine">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Animator\Files\AnimatorData.cs" />
+     <Compile Include="Assets\Animator\Files\Classes\AMAction.cs" />
+     <Compile Include="Assets\Animator\Files\Classes\AMAnimationAction.cs" />
+     <Compile Include="Assets\Animator\Files\Classes\AMAnimationKey.cs" />
+     <Compile Include="Assets\Animator\Files\Classes\AMAnimationTrack.cs" />
+     <Compile Include="Assets\Animator\Files\Classes\AMAudioAction.cs" />
+     <Compile Include="Assets\Animator\Files\Classes\AMAudioKey.cs" />
+     <Compile Include="Assets\Animator\Files\Classes\AMAudioTrack.cs" />
+     <Compile Include="Assets\Animator\Files\Classes\AMCameraSwitcherAction.cs" />
+     <Compile Include="Assets\Animator\Files\Classes\AMCameraSwitcherKey.cs" />
+     <Compile Include="Assets\Animator\Files\Classes\AMCameraSwitcherTrack.cs" />
+     <Compile Include="Assets\Animator\Files\Classes\AMEventAction.cs" />
+     <Compile Include="Assets\Animator\Files\Classes\AMEventKey.cs" />
+     <Compile Include="Assets\Animator\Files\Classes\AMEventParameter.cs" />
+     <Compile Include="Assets\Animator\Files\Classes\AMEventTrack.cs" />
+     <Compile Include="Assets\Animator\Files\Classes\AMGroup.cs" />
+     <Compile Include="Assets\Animator\Files\Classes\AMKey.cs" />
+     <Compile Include="Assets\Animator\Files\Classes\AMOrientationAction.cs" />
+     <Compile Include="Assets\Animator\Files\Classes\AMOrientationKey.cs" />
+     <Compile Include="Assets\Animator\Files\Classes\AMOrientationTrack.cs" />
+     <Compile Include="Assets\Animator\Files\Classes\AMPath.cs" />
+     <Compile Include="Assets\Animator\Files\Classes\AMPropertyAction.cs" />
+     <Compile Include="Assets\Animator\Files\Classes\AMPropertyKey.cs" />
+     <Compile Include="Assets\Animator\Files\Classes\AMPropertyTrack.cs" />
+     <Compile Include="Assets\Animator\Files\Classes\AMRotationAction.cs" />
+     <Compile Include="Assets\Animator\Files\Classes\AMRotationKey.cs" />
+     <Compile Include="Assets\Animator\Files\Classes\AMRotationTrack.cs" />
+     <Compile Include="Assets\Animator\Files\Classes\AMTake.cs" />
+     <Compile Include="Assets\Animator\Files\Classes\AMTarget.cs" />
+     <Compile Include="Assets\Animator\Files\Classes\AMTrack.cs" />
+     <Compile Include="Assets\Animator\Files\Classes\AMTranslationAction.cs" />
+     <Compile Include="Assets\Animator\Files\Classes\AMTranslationKey.cs" />
+     <Compile Include="Assets\Animator\Files\Classes\AMTranslationTrack.cs" />
+     <Compile Include="Assets\Animator\Files\Scripts\ClipboardHelper.cs" />
+     <Compile Include="Assets\Animator\Files\Scripts\ComboBox.cs" />
+     <Compile Include="Assets\Animator\Files\Scripts\ObjectCopier.cs" />
+     <Compile Include="Assets\Animator\Plugins\AMCameraFade.cs" />
+     <Compile Include="Assets\Animator\Plugins\AMTween.cs" />
+     <Compile Include="Assets\Animator\Plugins\AnimatorTimeline.cs" />
+     <Compile Include="Assets\LeanTween\Plugins\LeanTween.cs" />
+     <Compile Include="Assets\PolyTieLight\Scripts\Extensions\BoxCollider2DExtension.cs" />
+     <Compile Include="Assets\PolyTieLight\Scripts\Extensions\CircleCollider2DExtension.cs" />
+     <Compile Include="Assets\PolyTieLight\Scripts\Extensions\EdgeCollider2DExtension.cs" />
+     <Compile Include="Assets\PolyTieLight\Scripts\Extensions\MonoBehaviourExtension.cs" />
+     <Compile Include="Assets\PolyTieLight\Scripts\Extensions\PolygonCollider2DExtension.cs" />
+     <Compile Include="Assets\PolyTieLight\Scripts\ScriptableObjects\ColorPallet.cs" />
+     <Compile Include="Assets\PolyTieLight\Scripts\Tools\ColorPalletReader.cs" />
+     <Compile Include="Assets\PolyTieLight\Scripts\Tools\FreezeHandle.cs" />
+     <Compile Include="Assets\PolyTieLight\Scripts\Tools\GeometryFunctions.cs" />
+     <Compile Include="Assets\PolyTieLight\Scripts\Tools\Physics2DDebugRenderer.cs" />
+     <Compile Include="Assets\PolyTieLight\Scripts\Tools\Triangulator.cs" />
+     <Compile Include="Assets\PolyTieLight\Scripts\Tools\Utilities.cs" />
+     <Compile Include="Assets\PolyTieLight\Scripts\Tools\VectorPath2D.cs" />
+     <Compile Include="Assets\Scripts\Camera\CameraController.cs" />
+     <Compile Include="Assets\Scripts\GameOver.cs" />
+     <Compile Include="Assets\Scripts\Intro\IntroScreen.cs" />
+     <Compile Include="Assets\Scripts\MainScene\BlockedDoor.cs" />
+     <Compile Include="Assets\Scripts\MainScene\Enemies\EyeEnemy.cs" />
+     <Compile Include="Assets\Scripts\MainScene\Enemies\Fishy.cs" />
+     <Compile Include="Assets\Scripts\MainScene\Enemies\GenericEnemy.cs" />
+     <Compile Include="Assets\Scripts\MainScene\Enemies\Kraken.cs" />
+     <Compile Include="Assets\Scripts\MainScene\Enemies\MiniTentacle.cs" />
+     <Compile Include="Assets\Scripts\MainScene\Enemies\ZombieFishy.cs" />
+     <Compile Include="Assets\Scripts\MainScene\GameMaker.cs" />
+     <Compile Include="Assets\Scripts\MainScene\Items\WeaponPowerUp.cs" />
+     <Compile Include="Assets\Scripts\Player\PlayerController.cs" />
+     <Compile Include="Assets\Scripts\Weapons\wp_AdvBubble.cs" />
+     <Compile Include="Assets\Scripts\Weapons\wp_Bubble.cs" />
+     <Compile Include="Assets\Scripts\Weapons\wp_Harpoon.cs" />
+     <None Include="Assets\Standard Assets\Projectors\Guidelines.txt" />
+     <None Include="Assets\Standard Assets (Mobile)\Shaders\Particle Shaders\Mobile Multiply Culled.shader" />
+     <None Include="Assets\Animator\Files\Resources\AMIrisShape.shader" />
+     <None Include="Assets\Standard Assets (Mobile)\Shaders\Miscellaneous Shaders\Mobile Background.shader" />
+     <None Include="Assets\Standard Assets\Projectors\Sources\Shaders\Projector Multiply.shader" />
+     <None Include="Assets\Standard Assets (Mobile)\Shaders\Vertex Colored Shaders\Mobile Transparent Vertex Color.shader" />
+     <None Include="Assets\Standard Assets\Tessellation Shaders\BumpedSpecularSmooth.shader" />
+     <None Include="Assets\Standard Assets (Mobile)\Shaders\Miscellaneous Shaders\Mobile Detail.shader" />
+     <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
+     <None Include="Assets\LeanTween\LeanTween-ReadMe.txt" />
+     <None Include="Assets\Standard Assets\Water (Pro Only)\Water4\Sources\Shaders\FX-SimpleWater4.shader" />
+     <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />
+     <None Include="Assets\Standard Assets\Projectors\Sources\Shaders\Projector Light.shader" />
+     <None Include="Assets\Standard Assets\Water (Basic)\Sources\Shaders\FX-Water Simple.shader" />
+     <None Include="Assets\Standard Assets (Mobile)\Shaders\Lightmap Shaders (Legacy)\Mobile Lightmap Reflective.shader" />
+     <None Include="Assets\Standard Assets (Mobile)\Shaders\Particle Shaders\Mobile Particles Additive Culled.shader" />
+     <None Include="Assets\Standard Assets\Water (Pro Only)\Sources\Shaders\FX-Water.shader" />
+     <None Include="Assets\Standard Assets (Mobile)\Shaders\Vertex Colored Shaders\Mobile Vertex Colored.shader" />
+     <None Include="Assets\Standard Assets (Mobile)\Shaders\Lightmap Shaders (Legacy)\Mobile Lightmap Only.shader" />
+     <None Include="Assets\Standard Assets (Mobile)\Shaders\Lightmap Shaders (Legacy)\Mobile Lightmap AlphaTest.shader" />
+     <None Include="Assets\Standard Assets\Water (Pro Only)\Water4\Sources\Shaders\WaterInclude.cginc" />
+     <None Include="Assets\Standard Assets\Water (Pro Only)\Water4\Sources\Shaders\FX-Water4.shader" />
+     <None Include="Assets\Standard Assets\Tessellation Shaders\BumpedSpecularDisplacement.shader" />
+     <None Include="Assets\Animator\changelog.txt" />
+ <Reference Include="Assembly-UnityScript-firstpass">
+ <HintPath>Library\ScriptAssemblies\Assembly-UnityScript-firstpass.dll</HintPath>
+ </Reference>
+ <Reference Include="JsonFx.Json">
+ <HintPath>Assets\Animator\Files\Scripts\JsonFx.Json.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass-vs.csproj">
+      <Project>{41C448BC-F162-D2E0-8AB7-BBA201902918}</Project>      <Name>Assembly-CSharp-firstpass-vs</Name>    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
